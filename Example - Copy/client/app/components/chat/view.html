@@ -1,0 +1,11 @@
+<div class="jumbotron" ng-init="allMessages=''">
+<a href="/" class="btn btn-danger">Log Out</a>
+  <div class="list-group">
+    <div class="list-group-item active" ng-repeat="x in allMessages">
+      <span style="display:inline-block;width:100px;">{{x.name}}</span>
+      <span>{{x.message}}</span>
+    </div>
+</div>
+  <input type="text" ng-model="message"/>
+  <div class="btn btn-success" ng-click="sendMsg()">Send Message</div>
+</div>
